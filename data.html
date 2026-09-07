@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#10100f" />
+    <meta name="description" content="A practical map of free and low-cost market data for retail researchers." />
+    <title>Data Desk — nwpcs_</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="data-page">
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="nwpcs_ home"><img src="logo.svg" alt="" /> <span>nwpcs_</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html#chronology">Chronology</a>
+        <a href="lab.html">Visual lab</a>
+        <a href="index.html#practice">Practice</a>
+        <a href="index.html#reading-room">Sources</a>
+      </nav>
+      <div class="header-meta"><span class="status-dot"></span><span>Data desk / 01</span></div>
+      <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+    </header>
+
+    <main>
+      <section class="data-hero section-grid">
+        <p class="eyebrow">The retail data desk</p>
+        <div class="data-hero-copy">
+          <h1>You do not need<br />a <em>million-dollar</em><br />terminal to start.</h1>
+          <p>You do need to know what you are actually receiving. This is a research map for free and low-cost futures, options, and order-book data — with the limitations left visible.</p>
+        </div>
+        <div class="hero-index mono">DATA <span>/</span> 01</div>
+      </section>
+
+      <section class="data-truth section-grid">
+        <div class="section-side"><p class="eyebrow">First, the uncomfortable truth</p></div>
+        <div class="data-truth-copy"><p class="display-copy">Free data can teach you the mechanism. It cannot pretend to be a colocated feed.</p><p class="data-truth-note">A delayed quote, an end-of-day chain, an aggregated L2 book, and order-by-order L3 are different instruments. A serious test names the difference instead of hiding it.</p></div>
+      </section>
+
+      <section class="featured-platform section-grid">
+        <div class="section-side"><p class="eyebrow">Featured by the community</p><p class="side-note">A research environment<br />worth exploring.</p></div>
+        <div class="featured-platform-card reveal">
+          <div class="featured-platform-top"><span class="mono">QUANT RESEARCH / PLATFORM</span><span class="availability">EXTERNAL RESOURCE</span></div>
+          <div class="featured-platform-main">
+            <div>
+              <h2>QuantPad<span>.</span></h2>
+              <p>A practical bridge between a research question and a reproducible experiment. QuantPad presents a workflow where an agent can inspect available coverage, retrieve market data, and produce analysis-ready artifacts instead of leaving a retail researcher to stitch every tool together alone.</p>
+            </div>
+            <div class="featured-platform-proof">
+              <span class="mono">A concrete example</span>
+              <strong>Pull 10 years of NQ futures tick data</strong>
+              <p>Coverage check → data API → local Parquet file → research-ready dataset.</p>
+            </div>
+          </div>
+          <div class="featured-platform-bottom">
+            <span class="mono">WHY IT MATTERS</span>
+            <p>It addresses the gap between “I understand the model” and “I can actually test the model on data.” Verify current coverage, pricing, access terms, and exchange permissions before relying on any dataset.</p>
+            <a class="text-link" href="https://quantpad.ai/" target="_blank" rel="noreferrer">Visit QuantPad <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="data-sources section-grid">
+        <div class="section-side"><p class="eyebrow">Start here</p><p class="side-note">Choose by research<br />question, not by logo.</p></div>
+        <div class="source-desk">
+          <article class="data-source reveal"><div class="source-meta"><span class="mono">FUTURES / DELAYED</span><span class="availability">FREE VIEW</span></div><h2>CME delayed quotes</h2><p>Official contract pages, delayed futures and options snapshots, and product specifications. Useful for learning symbols, tick size, expiry, and settlement conventions.</p><div class="data-fit"><span>Best for</span><strong>Contract research · delayed paper work</strong></div><a href="https://www.cmegroup.com/market-data/real-time-and-delayed-quotes.html" target="_blank" rel="noreferrer">Open CME market data <span>↗</span></a></article>
+          <article class="data-source reveal"><div class="source-meta"><span class="mono">FUTURES / DAILY</span><span class="availability">FREE DATASETS</span></div><h2>Nasdaq Data Link</h2><p>Searchable futures databases, including continuous-contract series. Good for daily and medium-frequency research, but inspect roll rules, adjustments, history, and premium status for each dataset.</p><div class="data-fit"><span>Best for</span><strong>First backtest · regime studies</strong></div><a href="https://data.nasdaq.com/databases/CHRIS" target="_blank" rel="noreferrer">Open the futures catalog <span>↗</span></a></article>
+          <article class="data-source reveal"><div class="source-meta"><span class="mono">MULTI-ASSET / TICKS</span><span class="availability">CREDITS + PAYG</span></div><h2>Databento</h2><p>Normalized historical and live schemas across supported venues. Depending on venue, you may find trades, MBP quotes, or MBO events. Promotional credits change, so verify current terms before planning a dataset around them.</p><div class="data-fit"><span>Best for</span><strong>Serious replay · execution research</strong></div><a href="https://databento.com/pricing" target="_blank" rel="noreferrer">Check current pricing and credits <span>↗</span></a></article>
+          <article class="data-source reveal"><div class="source-meta"><span class="mono">CRYPTO FUTURES / L2</span><span class="availability">PUBLIC STREAM</span></div><h2>Binance USDⓈ-M depth</h2><p>Public WebSocket depth streams provide aggregated price-level updates. This is L2, not free order-by-order L3, and it is not a historical archive — you must capture and store the stream yourself.</p><div class="data-fit"><span>Best for</span><strong>Live paper trading · book recorder</strong></div><a href="https://developers.binance.com/docs/derivatives/usds-margined-futures/websocket-market-streams" target="_blank" rel="noreferrer">Read the depth stream docs <span>↗</span></a></article>
+          <article class="data-source reveal"><div class="source-meta"><span class="mono">OPTIONS / REFERENCE</span><span class="availability">FREE REPORTS</span></div><h2>OCC market data</h2><p>Official contract adjustments, volume, open interest, and clearing-related reports. Excellent for validating option series and corporate-action changes; not a complete historical bid/ask book.</p><div class="data-fit"><span>Best for</span><strong>Chain validation · OI features</strong></div><a href="https://www.theocc.com/market-data/market-data-reports" target="_blank" rel="noreferrer">Open OCC reports <span>↗</span></a></article>
+          <article class="data-source reveal"><div class="source-meta"><span class="mono">OPTIONS / DELAYED</span><span class="availability">FREE VIEW</span></div><h2>Cboe delayed quotes</h2><p>Delayed option quote displays help you inspect live chain structure manually. They are not an unrestricted historical/API feed and are not enough alone for fill or spread backtests.</p><div class="data-fit"><span>Best for</span><strong>Manual validation · chain literacy</strong></div><a href="https://www.cboe.com/delayed_quotes/options/" target="_blank" rel="noreferrer">Open Cboe delayed quotes <span>↗</span></a></article>
+        </div>
+      </section>
+
+      <section class="data-levels section-grid">
+        <div class="section-side"><p class="eyebrow">Do not mix the levels</p></div>
+        <div class="levels-table">
+          <div class="level-row level-header"><span class="mono">LEVEL</span><span class="mono">WHAT YOU GET</span><span class="mono">WHAT IT CANNOT PROVE</span></div>
+          <div class="level-row"><strong>L1</strong><span>Last trade, OHLC, top-of-book snapshot.</span><span>Whether your order would have filled.</span></div>
+          <div class="level-row"><strong>L2</strong><span>Aggregated quantity at each price level.</span><span>Which individual participant placed or removed size.</span></div>
+          <div class="level-row"><strong>L3 / MBO</strong><span>Order-by-order events and queue changes, where the venue exposes them.</span><span>That a free feed exists, or that historical retention is included.</span></div>
+          <div class="level-row"><strong>Options chain</strong><span>Strike, expiry, bid/ask, trade, IV, Greeks depending on provider.</span><span>That end-of-day marks model intraday execution.</span></div>
+        </div>
+      </section>
+
+      <section class="research-stack section-grid">
+        <div class="section-side"><p class="eyebrow">A realistic build order</p><p class="side-note">Earn complexity.<br />Do not buy it first.</p></div>
+        <div class="stack-body">
+          <article><span class="mono">01 / LEARN</span><h3>Daily bars and contract specs</h3><p>Reproduce a simple hypothesis with transparent data. Add correct expiry, roll, multiplier, tick value, and session calendars.</p></article>
+          <article><span class="mono">02 / REPLAY</span><h3>Record a public L2 stream</h3><p>Build a collector with timestamps, sequence checks, reconnect logic, and raw message storage. Your dataset becomes yours.</p></article>
+          <article><span class="mono">03 / EXECUTE</span><h3>Add bid/ask and costs</h3><p>Model spread, fees, slippage, latency, partial fills, and rejected orders before trusting a result.</p></article>
+          <article><span class="mono">04 / SCALE</span><h3>Pay only for the missing field</h3><p>When a question genuinely needs historical MBO or complete option quotes, buy the smallest licensed slice that answers it.</p></article>
+        </div>
+      </section>
+
+      <section class="data-warning section-grid"><span class="mono">DATA DISCIPLINE</span><p>Never download a “free” dataset without checking timestamp timezone, corporate actions, contract rolls, survivorship, exchange rights, and whether quotes are executable.</p><a class="text-link" href="index.html#practice">Return to the practical workflow <span>↗</span></a></section>
+    </main>
+    <footer class="site-footer section-grid"><span>nwpcs_</span><span class="mono">A field guide for independent researchers</span><span>© 2024</span><a class="social-link" href="https://www.instagram.com/nwpcs_/" target="_blank" rel="noreferrer" aria-label="Follow nwpcs_ on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg><span>Instagram</span></a></footer>
+    <script src="data.js"></script>
+  </body>
+</html>
